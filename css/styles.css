@@ -69,6 +69,8 @@ body {
   max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
+  box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
 }
 
 .logo {
@@ -112,6 +114,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-link:hover,
@@ -151,6 +154,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: inherit;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-link:hover,
@@ -177,6 +181,7 @@ body {
 
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .header-main {
@@ -208,11 +213,12 @@ body {
   height: 56px;
   color: #ffffff;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button:hover,
 .button:focus {
-  background: #404bbf;
+  background-color: #404bbf;
 }
 
 /* ===============/section-main=============== */
@@ -283,6 +289,8 @@ body {
   width: calc((100% - 72px) / 4);
   text-align: center;
   border-radius: 0px 0px 4px 4px;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 .name-team {
@@ -294,7 +302,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  column-gap: 24px;
+  gap: 24px;
   margin-top: 8px;
 }
 
@@ -446,6 +454,7 @@ body {
 
 .footer-container {
   display: flex;
+  align-items: baseline;
 }
 
 .page-footer {
@@ -483,7 +492,7 @@ body {
 
 .footer-social-list {
   display: flex;
-  column-gap: 16px;
+  gap: 16px;
 }
 
 .footer-social-item {
